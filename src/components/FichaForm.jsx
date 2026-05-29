@@ -41,9 +41,9 @@ export default function FichaForm({ onAdicionar, emEdicao, onCancelarEdicao, dis
 
       <form onSubmit={handleSubmit} className="form-grid">
         <div className="field full">
-          <label>Nome completo <span>*</span></label>
+          <label>Nome<span>*</span></label>
           <input 
-            type="text" className="p-input" placeholder="Nome do participante" required
+            type="text" className="p-input" placeholder="Nome do encontrista" required
             value={form.nome} onChange={e => setForm({...form, nome: e.target.value})}
           />
         </div>
