@@ -97,9 +97,17 @@ export default function FichaForm({ onAdicionar, emEdicao, onCancelarEdicao, dis
           <input type="text" className="p-input" placeholder="Nome do líder" value={form.lider} onChange={e => setForm({...form, lider: e.target.value})} />
         </div>
 
+        {/* CAMPO DO WHATSAPP ATUALIZADO ABAIXO */}
         <div className="field">
           <label>WhatsApp</label>
-          <input type="text" className="p-input" placeholder="(00) 00000-0000" value={form.whatsapp} onChange={e => setForm({...form, whatsapp: e.target.value})} />
+          <input 
+            type="tel" 
+            inputMode="numeric" 
+            className="p-input" 
+            placeholder="(00) 00000-0000" 
+            value={form.whatsapp} 
+            onChange={e => setForm({...form, whatsapp: e.target.value})} 
+          />
         </div>
 
         <div className="field full">
