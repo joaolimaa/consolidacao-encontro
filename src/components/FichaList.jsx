@@ -27,7 +27,7 @@ export default function FichaList({ registros, onEdit, onDelete }) {
           <div className="card-icon">
             <SvgListIcon />
           </div>
-          <span style={{ marginBottom: 0 }}>Participantes Cadastrados</span>
+          <span style={{ marginBottom: 0 }}>Cadastrados</span>
         </div>
         <span className="list-count">{registros.length}</span>
       </div>
